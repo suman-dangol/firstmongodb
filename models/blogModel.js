@@ -4,7 +4,10 @@ const { Schema } = mongoose;
 //schema: table ko lagi structure
 
 const blogSchema = new Schema({
-  title: String,
+  title: {
+    type: String,
+    required: true,
+  },
   description: String,
 });
 
